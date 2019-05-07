@@ -52,5 +52,12 @@ class Main {
     System.out.println(testThree);
     System.out.println("Your test average is " + ((testOne+testTwo+testThree)/3));
 
+    if(((testOne+testTwo+testThree)/3)>=70)
+      System.out.println("You are currently passing... somehow.");
+
+      else
+
+      System.out.println("U failin' brah, LOL");
+
   } //It was not *necessary* to create four scanners, per the uncommented-out code
 }
