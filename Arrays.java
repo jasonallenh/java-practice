@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 class Main {
   public static void main(String[] args) {
-    
+
     String[] groceries = {
       "soy milk","coffee beans","sugar","grapes","eggs"
     };
@@ -17,14 +17,10 @@ class Main {
     System.out.println("___SORTED ARRAY___");
 
     Arrays.sort(groceries); //this class alpabetizes indices
-     
-    for(int x = 0; x < groceries.length; x++){
-      System.out.print(groceries[x] + " ");
+
+    for(String a:groceries){ //"for each loop" 
+      System.out.print(a + " ");
     }
-
-  
-
-    
+    /* the colon is 'each,' so it reads "for each index in an array called groceries, execute the next line of code." In this context, it works better than a normal for loop because it is self-limited. The mathmatical operator in the for loop above (x < groceries.length) can cause an error if it were >, or =< because of an out-of-bounds array error. */
   }
 }
-
